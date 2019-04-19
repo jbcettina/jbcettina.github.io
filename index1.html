@@ -12,6 +12,7 @@ body{
 
 
 
+
  h2 { color: black; font-family:Verdana, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 28pt; }
  h3 { color: black; font-family:Verdana, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 20pt; }
  .s1 { color: black; font-family:Verdana, sans-serif; font-style: normal; font-weight: bold; text-decoration: none;  font-size: 15px; }
@@ -23,11 +24,11 @@ body{
  .s6 { color: #0D0D0D; font-family:Verdana, sans-serif; font-style: normal; font-weight: normal; text-decoration: none;  font-size: 15px;paddding-left:0px; }
  .s7 { color: black; font-family:Verdana, sans-serif; font-style: normal; font-weight: bold; text-decoration: none;  font-size: 15px; }
  .s8 { color: black; font-family:Verdana, sans-serif; font-style: italic; font-weight: normal; text-decoration: none;  font-size: 15px; }
- p.s9 { color: #333; font-family:Verdana, sans-serif; font-style: normal; font-weight: normal; text-decoration: none;  font-size: 15px; }
+ .s9 { color: #333; font-family:Verdana, sans-serif; font-style: normal; font-weight: normal; text-decoration: none;  font-size: 15px; }
  .s11 { color: #333; font-family:Verdana, sans-serif; font-style: normal; font-weight: bold; text-decoration: none;  font-size: 15px; }
  .s12 { color: #333; font-family:Verdana, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
  .s13 { color: #333; font-family:Verdana, sans-serif; font-style: normal; font-weight: bold; text-decoration: none;  font-size: 15px; }
- p.s14 { color: #333; font-family:Verdana, sans-serif; font-style: normal; font-weight: normal; text-decoration: none;  font-size: 15px; }
+ .s14 { color: #333; font-family:Verdana, sans-serif; font-style: normal; font-weight: normal; text-decoration: none;  font-size: 15px; }
  .s15 { color: #333; font-family:Verdana, sans-serif; font-style: normal; font-weight: bold; text-decoration: none;  font-size: 15px; }
  .s16 { color: #333; font-family:Verdana, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 48pt; }
  .p, p { color: black; font-family:Verdana, sans-serif; font-style: normal; font-weight: normal; text-decoration: none;  font-size: 25px; margin:0pt; text-align: justify;}
@@ -41,7 +42,7 @@ body{
  .s22 { color: black; font-family:Verdana, sans-serif; font-style: normal; font-weight: normal; text-decoration: none;  font-size: 15px; }
  .s23 { color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none;  font-size: 15px; }
  .s24 { color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: bold; text-decoration: none;  font-size: 15px; }
- p.s25 { color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15pt; }
+ .s25 { color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15pt; }
  .s26 { color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none;  font-size: 15px; }
  .s27 { color: black; font-family:Verdana, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 11pt; }
  .s28 { color: black; font-family:Verdana, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
@@ -63,7 +64,7 @@ body{
  .s44 { color: black; font-family:Verdana, sans-serif; font-style: italic; font-weight: bold; text-decoration: underline; font-size: 12pt; }
  .s45 { color: black; font-family:Verdana, sans-serif; font-style: italic; font-weight: normal; text-decoration: none;  font-size: 15px; }
  .s47 { color: black; font-family:Verdana, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
- p.s48 { color: black; font-family:Verdana, sans-serif; font-style: normal; font-weight: normal; text-decoration: none;  font-size: 15px; }
+ .s48 { color: black; font-family:Verdana, sans-serif; font-style: normal; font-weight: normal; text-decoration: none;  font-size: 15px; }
  h1 { color: black; font-family:Verdana, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 48pt; }
  .s49 { color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none;  font-size: 15px; vertical-align: -2pt; }
  .s50 { color: black; font-family:Calibri, sans-serif; font-style: normal; font-weight: normal; text-decoration: none;  font-size: 15px; vertical-align: -6pt; }
@@ -110,6 +111,9 @@ body{
 .s35,.s27,.s28{
 	font-size: 15px
 }
+p {
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
 	
 }
 
@@ -120,10 +124,16 @@ body{
  p{
  	font-size: 38px;
  }
+  p >.s6 ,.s5,.s9,.s1 ,.s2, .s3,.s4,.s5,.s6,.s7,.s8,.s9,.s10,.s11,.s12,.s13,.s14,.s15,.s16,p.s17,.s18,.s19,.s20,.s21,.s22,.s23,.s24,.s25,.s26,.s27,.s28,.s29,.s30,.s31 ,.s32, .s33,.s34,.s35,.s36,.s37,.s38,.s39,.s40,.s41 ,.s42, .s43,.s44,.s45,.s46,.s47,.s48,.s49,.s50,.s51 ,.s52, .s53,.s54,.s55,.s56,.s57,.s58,.s59,.s60,.s60,.s61,.s62,.s63 {
+ 	font-size: 38px;
+ }
 
 .s35,.s27,.s28{
 	font-size: 15px
 }
+ .a,a{
+ 	font-size: 24px;
+ }
 	
 }
 
@@ -132,6 +142,12 @@ body{
 
  p{
  	font-size: 50px;
+ }
+   p >.s6 ,.s5,.s9,.s1 ,.s2, .s3,.s4,.s5,.s6,.s7,.s8,.s9,.s10,.s11,.s12,.s13,.s14,.s15,.s16,p.s17,.s18,.s19,.s20,.s21,.s22,.s23,.s24,.s25,.s26,.s27,.s28,.s29,.s30,.s31 ,.s32, .s33,.s34,.s35,.s36,.s37,.s38,.s39,.s40,.s41 ,.s42, .s43,.s44,.s45,.s46,.s47,.s48,.s49,.s50,.s51 ,.s52, .s53,.s54,.s55,.s56,.s57,.s58,.s59,.s60,.s60,.s61,.s62,.s63 {
+ 	font-size: 50px;
+ }
+  .a,a{
+ 	font-size: 50;
  }
 
 .s35,.s27,.s28{
@@ -145,6 +161,13 @@ body{
  p{
  	font-size: 58px;
  }
+    p >.s6 ,.s5,.s9,.s1 ,.s2, .s3,.s4,.s5,.s6,.s7,.s8,.s9,.s10,.s11,.s12,.s13,.s14,.s15,.s16,p.s17,.s18,.s19,.s20,.s21,.s22,.s23,.s24,.s25,.s26,.s27,.s28,.s29,.s30,.s31 ,.s32, .s33,.s34,.s35,.s36,.s37,.s38,.s39,.s40,.s41 ,.s42, .s43,.s44,.s45,.s46,.s47,.s48,.s49,.s50,.s51 ,.s52, .s53,.s54,.s55,.s56,.s57,.s58,.s59,.s60,.s60,.s61,.s62,.s63 {
+ 	font-size: 58px;
+ }
+  .a,a{
+ 	font-size: 58px;
+ }
+
 
 .s35,.s27,.s28{
 	font-size: 15px
